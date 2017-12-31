@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Mantenimiento de Articulos</title>
+    </h:head>
+    <h:body>
+        <b:container>
+            <b:jumbotron>
+                <h1>JSF con JDBC!</h1>
+                <p>Esta es una practica de Introducción a JSF con JDBC. Programación IV, noviembre 2017</p>
+                <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+            </b:jumbotron>
+            <b:form inline="true">  
+                <b:container fluid="true" contentDisabled="false">
+                    <b:inputText label="Nombre de Articulo:" id="identification" value="#{man_articulos.actual.artNombre}"/>
+                    <b:commandButton value="Buscar" class="btn btn-primary btn-lg" action="#{man_articulos.buscar()}"/>
+                </b:container>
+            </b:form>
+            <br></br>
+            <b:dataTable var="art" value="#{man_articulos.lista}" border="1">
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Codigo"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.artCodigo}"></h:outputText>
+                </b:dataTableColumn>
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Nombre"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.artNombre}"></h:outputText>
+                </b:dataTableColumn>
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Precio"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.artPrecio}"></h:outputText>
+                </b:dataTableColumn>
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Stock"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.artStock}"></h:outputText>
+                </b:dataTableColumn>
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Categoria"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.catCodigo}"></h:outputText>
+                </b:dataTableColumn>
+                <b:dataTableColumn>
+                    <f:facet name="header">
+                        <h:outputText value="Proveedor"></h:outputText>
+                    </f:facet>
+                    <h:outputText value="#{art.proCodigo}"></h:outputText>
+                </b:dataTableColumn>
+            </b:dataTable> 
+        </b:container>
+    </h:body>
+</html>
+
