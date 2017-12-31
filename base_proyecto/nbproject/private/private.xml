@@ -3,13 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/web/WEB-INF/faces-config.xml</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/src/java/clases/Conexion.java</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/web/articulo.xhtml</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/src/java/controladores/man_articulos.java</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/src/java/modelos/modelo_articulo.java</file>
-            <file>file:/C:/Users/Mau/Documents/NetBeansProjects/base_proyecto/src/java/entidades/articulo.java</file>
+            <file>file:/C:/Users/Mau/Documents/GitHub/JSF-MySQL-BootsFaces/base_proyecto/src/java/clases/Conexion.java</file>
+            <file>file:/C:/Users/Mau/Documents/GitHub/JSF-MySQL-BootsFaces/base_proyecto/web/articulo.xhtml</file>
         </group>
     </open-files>
 </project-private>
