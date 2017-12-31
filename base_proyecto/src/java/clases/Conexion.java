@@ -25,7 +25,7 @@ public class Conexion {
         try{
             url       = "jdbc:mysql://localhost:3306/produccion";
             usuario   = "root";
-            contrasena= "practicaphp";
+            contrasena= "your password";
             con       = DriverManager.getConnection(url,usuario,contrasena);
         
         }catch(Exception e){
